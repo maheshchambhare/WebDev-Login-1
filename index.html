@@ -9,20 +9,21 @@
 </head>
 
 <body>
-    <form>
-        <div class="container" id="container">
-            <label class="label" for="uname">User Name</label>
-            <input class="label" type="text" placeholder="Enter Username" name="uname" required>
+    <form id="form">
+        <div class="error" id="container">
+            <label class="label" for="uname"><span class="content">Name</span></label>
+            <input id="name" type="text" autocomplete="off" placeholder="Enter Username" name="uname" required>
             <label class="label" for="pwd">Password</label>
-            <input class="label" type="password" placeholder="password" name="pwd" required>
-            <label class="label">
+            <input id="pass" type="password" autocomplete="off" placeholder="password" name="pwd" required>
+            <label class="check">
                 <input type="checkbox" checked="checked" name="Remember" required> Remember Me
             </label>
-            <button class="label" type="submit">Log in</button>
+            <button class="sub" type="submit">Log in</button>
 
 
         </div>
     </form>
+    <script src="./app.js"></script>
 </body>
 
 </html>
