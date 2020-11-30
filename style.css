@@ -1,29 +1,77 @@
-* {
-    display: borderbox;
-    height: auto;
-    width: auto;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
-
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+    background-color: #9db991;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: flex; */
+    width: 400px;
+    height: 500px;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    /* padding: 10%;
-    border: 2px; */
-    border-color: black;
-    height: auto;
-    width: auto;
-    padding-top: 12%;
-
+    box-shadow: 0 15px rgba(50,50,93,.1)
+    ,0 5px 15px rgba(0,0,0.07);
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: rgb(255, 0, 68);
+    margin: 40px;
+    font-size: 3rem;
+}
 
-.label {
-    margin: 2px;
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.uname{
+    font-size: 1rem;
     padding: 10px;
+    margin: 20px;
+    width: 100%;
+    /* border-color: transparent; */
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    
+}
+
+.btn {
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    height: 50px ;
+    width: 250px;
+    color: #fff;
+    background-color: rgb(255, 0, 68);
+    outline: none;
+    border-radius: 6px;
+    transition: ease-out 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: inset 300px 0 0 0.1px #f9e506;
+    color: rgb(255, 0, 68);
 }

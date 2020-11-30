@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-    <form id="form">
-        <div class="error" id="container">
-            <label class="label" for="uname"><span class="content">Name</span></label>
-            <input id="name" type="text" autocomplete="off" placeholder="Enter Username" name="uname" required>
-            <label class="label" for="pwd">Password</label>
-            <input id="pass" type="password" autocomplete="off" placeholder="password" name="pwd" required>
-            <label class="check">
-                <input type="checkbox" checked="checked" name="Remember" required> Remember Me
-            </label>
-            <button class="sub" type="submit">Log in</button>
+    
+    <div class="container">
+        <h1>Log In</h1>
+        <form class="login">
+            <!-- <label for="name">Name</label> -->
+            <input class="uname" type="text" placeholder="Username" minlength="6" maxlenght="20" name="name" required>
+            <!-- <label for="password">Name</label> -->
+            <input class="uname" type="password" placeholder="password" minlength="4" maxlenght="20" name="password" required>
+            <button class="btn">Sign In</button>
+        </form>
+    </div>
 
 
-        </div>
-    </form>
-    <script src="./app.js"></script>
 </body>
-
 </html>
